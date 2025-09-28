@@ -1,17 +1,22 @@
 # AI Making Challenge - Day 2
 
-## Topic : Cloud Architecture Design with eraser.ai
+## 💡 Topic : Cloud Architecture Design with eraser.ai
 
 
 ## 🎯 Objective
+One of the responsibilities of a cloud engineer is to design cloud architectures for customers. Sometimes this involves illustrating the architecture of an existing service in operation, and other times it requires envisioning and designing the architecture for a new service. Let’s focus on the case of developing a new service.
 
-Design and visualize a cloud architecture that meets customer requirements using natural language.
+When a customer wants to build a new service and asks, “We’re planning to create this type of service—how can we implement it?”, the engineer must be able to design an architecture that meets the customer’s needs.
 
-## 🛠️ AI Tools
+For example, if a customer says, “We want to develop an AI assistant capable of speech recognition—how should we design it?”, the engineer would combine cloud resources such as VMs, Kubernetes, load balancers, and databases to design an architecture and explain it to the customer.
 
-### [eraser.ai](https://www.eraser.io/ai)
-Create cloud architecture diagrams, database diagrams, and more in seconds — simply by describing your requirements in natural language or pasting in some code.
+**This raised the question** : could we replace this aspect of the engineer’s work with AI? Specifically, by leveraging AI that generates cloud architectures and diagrams based on natural language, I wanted to explore the possibility of constructing architectures in this way.
 
+## 🤖 AI Tools
+
+## [eraser.ai](https://www.eraser.io/ai)
+Eraser.ai is an AI-powered collaborative diagramming and documentation tool.
+It enables users to quickly transform natural language descriptions into visual diagrams and structured documentation—including cloud architectures—while leveraging a diagram-as-code approach that makes the outputs editable, versionable, and easy to maintain.
 ![eraser](images/eraser.ai.png)
 
 ## 📊 Results
@@ -19,40 +24,25 @@ I created an Azure cloud architecture for an AI voice assistant service using er
 The design was generated through two natural language prompts, and this is the result produced by eraser.ai.
 ![Day 2 Result](images/init_Architecture.png)
 
-It was a bit hard to read, so I manually adjusted the layout slightly for better clarity.
-![Day 2 Result](images/Architecture.png)
+The first architecture was a bit hard to read, so I manually adjusted the layout slightly for better clarity.![Day 2 Result](images/Architecture.png)
 
-## 📝 Input Prompts
-### Inital Prompt
-```
-"I am designing an AI-based voice assistant service on Microsoft Azure, and I would like to create a detailed architecture diagram. The service should include the following components and services:
+## 🛠️ Process
+I generated the architecture in two steps using natural language prompts.  
+The **full prompts** are available here: [View Prompts](sources/prompts)
 
-Speech-to-Text: Convert user speech input to text using an external AI model API.
+### Prompt Summary
+1. **Initial Prompt**  
+   - Request the generation of a cloud architecture on Microsoft Azure for building an AI-based voice assistant.
+   - I explicitly specified the following components and infrastructure to be included in the architecture:
+        - Components: Speech-to-Text, NLP, RAG, Text-to-Speech
+        - Infrastructure: AKS, VMs, Redis Cache, PostgreSQL, Security
 
-Natural Language Processing (NLP): Process the text to detect user intent and generate appropriate responses.
+2. **Second Prompt (For modification)**  
+   - Added Azure Application Gateway in front of AKS  
+   - Defined pod-level service communication (STT, NLP, TTS each calling their external AI APIs independently)
 
-RAG (Retrieve and Generate) for Response Generation: Use the internal knowledge base to augment the response generation.
 
-Text-to-Speech: Convert the generated text response into speech and output it to the user.
+## 📝 Reflection
+Eraser.ai does not generate architectures accurate enough to be directly put into production. However, when a customer describes the service they want in natural language, it can produce a reference architecture that is useful for communication purposes during client meetings.
 
-Infrastructure: The service should be deployed on Azure Kubernetes Service (AKS) for containerized application management.
-
-Virtual Machines (VM): Use VMs for handling large-scale batch jobs and processing tasks.
-
-Redis Cache: Implement Redis Cache for faster data processing and response times.
-
-PostgreSQL Database: Store necessary data in a PostgreSQL database.
-
-Security and Authentication: Ensure secure access to services and data, including encryption and access control mechanisms.
-
-Please create an Azure architecture diagram that shows how these components should be connected. The diagram should include the use of AKS, Redis Cache, PostgreSQL, external AI APIs, and other relevant services in a seamless, scalable, and secure design."
-```
-
-### Second Prompt for Modification
-```
-"Please modify the architecture to ensure the following:
-
-Application Gateway: Place an Azure Application Gateway in front of Azure Kubernetes Service (AKS) to handle incoming traffic, load balancing, and ensure scalability and security.
-
-Pod Service Communication: Each pod service (STT, TTS, NLP) deployed in AKS should independently call its respective external AI API. The STT pod should call the AI API for speech-to-text, the NLP pod for intent recognition and response generation, and the TTS pod for text-to-speech conversion."
-```
+In addition to cloud architectures, Eraser.ai can also generate diagrams and flowcharts. This makes it valuable for studying or teaching, as it can turn verbal explanations into clear diagrams. If I ever have the opportunity to give a lecture, I think it would be especially handy for creating diagrams or reference images to include in presentation slides.
