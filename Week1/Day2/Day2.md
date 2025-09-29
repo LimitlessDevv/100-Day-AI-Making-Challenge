@@ -27,7 +27,8 @@ The design was generated through two natural language prompts, and this is the r
 The first architecture was a bit hard to read, so I manually adjusted the layout slightly for better clarity.![Day 2 Result](images/Architecture.png)
 
 ## 🛠️ Process
-I generated the architecture in two steps using natural language prompts.  
+I generated the architecture in two steps using natural language prompts.
+To create these prompts, I used ChatGPT to refine and structure my ideas.
 The **full prompts** are available here: [View Prompts](sources/prompts)
 
 ### Prompt Summary
