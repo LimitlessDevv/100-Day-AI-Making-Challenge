@@ -1,118 +1,76 @@
-AI Making Challenge - Day 3
+# AI Making Challenge - Day 3
 
-Topic: Exploring Genspark – A Generalized AI Super Agent
-
-🎯 Objective
-Test how multiple AI capabilities can be integrated into a single platform and evaluate its usefulness for automating proposal-related work.
-
-🛠️ AI Tools
-Genspark
-A “super agent” service that allows users to access multiple AI features in one place:
-
-AI Chat
-
-Coding
-
-Document Creation
-
-Image/Video Generation
-
-Meeting Notetaking
-
-Calling
-
-Unlike specialized AI tools that focus on a single domain, Genspark provides a generalized AI platform where different functions can be used seamlessly in one interface.
-
-📊 Results
-
-I tested a few of the available services, focusing mainly on proposal automation since I recently spent significant time doing manual research and formatting.
-
-1. Making a PowerPoint Presentation
-
-Prompt used:
-
-Create a PowerPoint presentation in the style of a Korean IT company proposal.  
-The proposal should focus on **Microsoft Azure Cloud** as the core platform.  
-The tone and manner should be professional, trustworthy, and structured to clearly deliver Azure-based optimization strategies to the client.  
-Each slide should avoid unnecessary decorations and instead highlight key messages with structured diagrams, Azure architecture icons, and business-oriented visuals.  
-
-Organize the slides based on the following requirements, explicitly leveraging Azure services and capabilities:  
-1. Establishing and executing infrastructure cost optimization strategies (e.g., Azure Cost Management, Reserved Instances, Spot VMs)  
-2. Performing and optimizing Infra [up/down/out/in] scaling with history management (e.g., Azure Virtual Machine Scale Sets, AKS Autoscaling, Application Gateway Autoscaling)  
-3. Optimizing infrastructure configuration and improving performance based on monitoring data, with process standardization (e.g., Azure Monitor, Log Analytics, Application Insights)  
-4. Proposing and executing optimization strategies including Database and Middleware performance tuning (e.g., Azure Database for PostgreSQL, Azure SQL Database, Azure App Service, Azure Cache for Redis)  
+## 💡 Topic : Exploring Genspark - The All-in-One AI Workspace
 
 
-What’s interesting is that Genspark shows not just the final output, but also the thinking process behind it — what it’s searching, which steps it’s taking, and how it builds the result.
+## 🎯 Objective
+With the rise of generative AI, countless AI tools and services have emerged, and I've been actively using many of them. For conversational AI, I use ChatGPT and Claude depending on the purpose. For image generation, I rely on Nano Banana; for reliable, source-based searches, I turn to Perplexity; for coding tasks, I often use Base44 or Claude; and for creating presentations, I prefer Gamma.
 
-Sample outputs:
+However, switching between different platforms for each specific task sometimes feels a bit inconvenient. I’ve always wanted a platform to access multiple AI services in one place. So, when I found out that Genspark provides an all-in-one solution, I decided to test it out.
+
+
+## 🤖 AI Tools : [Genspark](https://www.genspark.ai/)
+Genspark is an all-in-one AI platform that combines chat, coding, content creation, and both image and video generation in one place. Unlike vertical AI tools that specialize in a single function, Genspark unifies multiple capabilities to deliver a more seamless workflow.
+
+![Genspark](images/genspark.png)
+
+AI features available in Genspark
+![genspark-feature](images/genspark-feature.png)
 
 
 
+## 📊 Results
+I tested only a few of Genspark's various AI features myself. Below are the results and the prompts I used are here: [View Propmts](sources)
+### 1. Making a PowerPoint Presentation
+Input Prompt Summary (Full: [prompts](sources/ppt-prompts.md))
+- Create a PowerPoint proposal for a Korean company about Azure Cloud
+- Ensure the proposal
+    - Cost optimization
+    - Capacity optimization
+    - DB/Middlewrare performance optimization
 
-The results were not fully aligned with the typical Korean IT company proposal style, but still useful as references.
+When the task was executed, not only the final output was shown, but also the thinking process in real time. I could see what it was searching for and how it was deriving the results, which I found useful.
 
-2. AI Chat (Multi-Model)
+![process](images/ppt-process.png)
 
-In AI Chat Mode, multiple AI models (GPT-5, Claude, etc.) can be used.
-I tested it with the following prompt:
+Partial final result
 
-Write a client-facing proposal in the style of a Korean IT company, focusing on Microsoft Azure Cloud optimization strategies.  
-The proposal should be professional, trustworthy, and well-structured, clearly addressing the following client requirements:
+![ppt](images/ppt1.png)
+![ppt](images/ppt2.png)
 
-1. Establishing and executing infrastructure cost optimization strategies  
-2. Performing and optimizing Infra [up/down/out/in] scaling with history management  
-3. Optimizing infrastructure configuration and improving performance based on monitoring data, with process standardization  
-4. Proposing and executing optimization strategies including Database and Middleware performance tuning  
+The output's style was somewhat different from the typical proposal format used in Korea, so it would be difficult to use as-is. However, if you have no idea at all about how to write such a proposal, it could be worth trying once.
 
-The proposal should include:  
-- Executive Summary: Key objectives and client value  
-- Approach & Methodology: How Azure services will be used to address each requirement  
-- Detailed Strategies: Azure tools, processes, and best practices for each area  
-- Expected Benefits: Cost savings, performance improvements, scalability, and reliability  
-- Implementation Plan: High-level roadmap or phased approach  
-- Differentiation: Why our company’s approach is effective and trustworthy  
+That said, in my case, I think I would use GPT or Claude for generating the content of the proposal, and tools like Nano Banana or Eraser.ai for creating the necessary diagrams.
 
+### 2. AI Chat
+In AI Chat Mode, you can use multiple AI models such as GPT-5, Gemini, and Claude.
 
-Sample outputs from different models:
-
-GPT-5 Thinking High
-
+Since each model has its own strengths, I previously had to switch back and forth between different AI chat services. So, being able to switch models directly within a single platform felt like a nice advantage.
 
 
+![alt text](images/image.png)
 
-Claude Sonnet 4
+I tested this by giving the same [input prompt](sources/chat-prompts.md) to GPT-5 Thinking High Model and Claude Sonnet4, asking them to generate content for a proposal.
 
+These are the output each GPT-5 Thinking High and Claude Sonnet4. And, personally I found Claude's response to be better organized and more useful for reference.
 
+- Part of GPT-5’s “Thinking High” output
+![alt text](images/image-1.png)
 
+- Part of GPT-5’s "Claude Sonnet4” output 
+![alt text](images/image-2.png)
 
-3. Creating a Website
+### 3. Creating Website
+I tried using the same [prompt](sources/coding-prompts.md) I had used in Day 1 to create the Challenge Tracking App with Base44, but this time in Genspark.
 
-I reused the Challenge Tracker App prompt from Day 1 (originally tested on Base44) and asked Genspark to generate it.
+Below are the results generated by Genspark.
+![alt text](image.png)
+![alt text](image-1.png)
 
-Prompt (excerpt):
+Since it's a simple site, it seemed to work well, and the design was clean and well-made. Also, there wasn't much difference compared to Base44; all the features worked properly and it was well-built.
 
-App Name: The 100 Days of AI Making Challenge Tracker  
+## 📝 Reflection
 
-Objective:  
-Track the "100 Days of AI Making Challenge" progress on a single page.  
-Each day should allow marking completion and adding a description.  
-Provide a grid view (1–100 days) with a progress bar and milestone badges.  
+Until now, I had been switching back and forth between various AI services, so having a platform that lets you use multiple functions at once was quite convenient.
 
-
-Results:
-
-
-
-
-The site worked well and looked clean — very similar in quality to what I had tested on Base44.
-
-📝 Reflection
-
-Having multiple AI features (chat, docs, code, images, etc.) in one platform is very convenient compared to juggling many separate services.
-
-For specialized tasks, individual AI tools might still perform better, but Genspark’s generalized approach didn’t feel lacking.
-
-Especially for proposal writing automation, it saved me a lot of manual formatting and research work.
-
-I see potential in using it occasionally as an all-in-one workspace for AI-driven tasks.
+Since I've only tested it so far, I haven't checked how Genspark's individual AI services compare in performance to the specialized AI services, or whether there are any shortcomings. But at first glance, it doesn't seem to fall short, and I'm hopeful that I'll be able to use it occasionally.
