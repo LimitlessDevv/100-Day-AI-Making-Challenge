@@ -1,6 +1,6 @@
 # AI Making Challenge - Day 4
 
-## 💡 Topic : Building an AI agent with n8n
+## 💡 Topic : Building an AI agent workflow with n8n
 
 
 ## 🎯 Objective
@@ -16,11 +16,22 @@ n8n is an workflow automation platform. It allows users to connect APIs, databas
 
 
 ## 📊 Results
+![alt text](image-2.png)
+That’s my final AI agent workflow, and the structure is intentionally simple.
+The trigger is set to chat, and I’ve integrated the core components the agent needs: the LLM model, memory, Google Calendar, Google Drive, and Gmail.
 
+![alt text](<제목 없는 비디오 - Clipchamp로 제작 (1) (1).gif>)
+![alt text](image-6.png)
+When I interact through chat, the OpenAI chat model automatically determines which tool to use, where to fetch data from, and what action to perform. It then executes the workflow and produces the result without any manual intervention.
+
+The workflow design and prompting approach were based on Citizen Developer Gu’s resources
+- [https://github.com/citizendev9c/yt-assets/tree/main/automation/n8n/first-ai-agent-25-05-03](https://github.com/citizendev9c/yt-assets/tree/main/automation/n8n/first-ai-agent-25-05-03)
+- [https://www.youtube.com/watch?v=VlsgHC5xkPA&t=1254s](https://www.youtube.com/watch?v=VlsgHC5xkPA&t=1254s)
 
 
 ## 📝 Reflection
+Instead of defining each step of the workflow in detail, I simply connected the tools required for the AI agent. The agent then automatically decided which resources to use and what actions to take, which made the process very convenient. Its flexibility is a major advantage, as a single workflow can handle multiple tasks.
 
-Until now, I had been switching back and forth between various AI services, so having a platform that lets you use multiple functions at once was quite convenient.
+That said, since it’s based on a generative AI model, hallucination issues meant the results weren’t always accurate on the first try, and overall precision was lower compared to traditional workflows.
 
-Since I've only tested it so far, I haven't checked how Genspark's individual AI services compare in performance to the specialized AI services, or whether there are any shortcomings. But at first glance, it doesn't seem to fall short, and I'm hopeful that I'll be able to use it occasionally.
+However, as generative AI continues to advance, I expect the performance of AI agents will also improve significantly.
