@@ -12,16 +12,16 @@ This means that even without highly detailed instructions, an AI Agent can deter
 
 ## 🤖 AI Tools : [n8n](https://n8n.io/)
 n8n is an workflow automation platform. It allows users to connect APIs, databases, and third-party services into automated workflows without needing to wirte a full custom application. Unlike simple ‘trigger-action’ tools, n8n not only supports advanced workflows with branching logic, loops, and custom code, but also leverages AI to build intelligent automations, enabling agent-like behavior that can make decisions and act autonomously.
-![alt text](image.png)
+![alt text](images/image.png)
 
 
 ## 📊 Results
-![alt text](image-2.png)
+![alt text](images/image-2.png)
 That’s my final AI agent workflow, and the structure is intentionally simple.
 The trigger is set to chat, and I’ve integrated the core components the agent needs: the LLM model, memory, Google Calendar, Google Drive, and Gmail.
 
-![alt text](<제목 없는 비디오 - Clipchamp로 제작 (1) (1).gif>)
-![alt text](image-6.png)
+![alt text](images/gif.gif)
+![alt text](images/image-6.png)
 When I interact through chat, the OpenAI chat model automatically determines which tool to use, where to fetch data from, and what action to perform. It then executes the workflow and produces the result without any manual intervention.
 
 The workflow design and prompting approach were based on Citizen Developer Gu’s resources
