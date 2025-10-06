@@ -37,7 +37,6 @@ I first created the image using Nano Banana, then used the same prompt as above 
 ![alt text](images/image.png)
 
 [Generated video]
-
 ![alt text](images\video2.gif)
 
 The image-to-video generation turned out generally good, but there were a few awkward parts. When the camera zoomed in, the food in the frying pan suddenly changed.
