@@ -32,6 +32,7 @@ The agent automatically searched my Google Drive for the file and generated both
 I created an agent that conducts research through online searches. It reminded me of a research topic I worked on at a previous medical AI company, so I decided to revisit it. I asked the agent to compile a list of potential customers who might purchase an AI solution that analyzes lung CT scans to detect nodules and cancer. [Used Prompt](sources/prompt2.md)
 
 [Work Process]
+
 ![alt text](images/agent.gif)
 
 [Result]
