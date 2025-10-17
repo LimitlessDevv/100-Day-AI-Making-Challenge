@@ -1,0 +1,16 @@
+{
+  "name": "source-code",
+  "version": "1.0.0",
+  "description": "This folder contains a small task manager app split into two Node.js microservices (read/write) and a static frontend.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-all": "concurrently \"npm start --prefix task-read-service\" \"npm start --prefix task-write-service\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
