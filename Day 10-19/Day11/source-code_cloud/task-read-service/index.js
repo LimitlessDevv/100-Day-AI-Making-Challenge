@@ -10,9 +10,9 @@ const PORT = process.env.PORT || 4001;
 // Configure your PostgreSQL connection here
 const pool = new Pool({
   user: process.env.PGUSER || "postgres",
-  host: process.env.PGHOST || "localhost",
+  host: process.env.PGHOST || "inyoung-app-test.postgres.database.azure.com",
   database: process.env.PGDATABASE || "tasksdb",
-  password: process.env.PGPASSWORD || "password",
+  password: process.env.PGPASSWORD || "student123!",
   port: process.env.PGPORT || 5432,
 });
 

@@ -3,8 +3,8 @@ const API_BASE = ""; // Set to gateway base path in deployment
 // and writes to the write-service (4002). When deploying behind a gateway,
 // set API_BASE to the gateway base URL (e.g. https://app.example.com) so both
 // read and write requests go through the gateway path-based routing.
-const READ_URL = API_BASE ? API_BASE + "/tasks" : "http://40.82.129.197:4001/tasks";
-const WRITE_URL = API_BASE ? API_BASE + "/tasks" : "http://20.39.186.192:4002/tasks";
+const READ_URL = API_BASE ? API_BASE + "/tasks" : "http://localhost:4001/tasks";
+const WRITE_URL = API_BASE ? API_BASE + "/tasks" : "http://localhost:4002/tasks";
 
 const taskList = document.getElementById("task-list");
 const taskForm = document.getElementById("task-form");
