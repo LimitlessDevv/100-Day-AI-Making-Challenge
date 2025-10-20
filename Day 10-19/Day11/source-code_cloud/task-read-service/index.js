@@ -4,16 +4,19 @@ import pkg from "pg";
 const { Pool } = pkg;
 
 const app = express();
-app.use(cors());
+app.use(cors({ origin: "http://40.82.129.240" }));
 const PORT = process.env.PORT || 4001;
 
 // Configure your PostgreSQL connection here
 const pool = new Pool({
-  user: process.env.PGUSER || "postgres",
-  host: process.env.PGHOST || "inyoung-app-test.postgres.database.azure.com",
-  database: process.env.PGDATABASE || "tasksdb",
-  password: process.env.PGPASSWORD || "student123!",
-  port: process.env.PGPORT || 5432,
+  user: "postgres",
+  host: "inyoung-app-test.postgres.database.azure.com",
+  database: "tasksdb",
+  password: "student123!",
+  port: 5432,
+  ssl: {
+    rejectUnauthorized: false
+  }
 });
 
 app.get("/tasks", async (req, res) => {
@@ -21,10 +24,11 @@ app.get("/tasks", async (req, res) => {
     const { rows } = await pool.query("SELECT id, title, completed FROM tasks ORDER BY id DESC");
     res.json(rows);
   } catch (err) {
+    console.error("!!! DATABASE QUERY FAILED:", err);
     res.status(500).json({ error: "Failed to fetch tasks" });
   }
 });
 
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
   console.log(`task-read-service running on port ${PORT}`);
 });
