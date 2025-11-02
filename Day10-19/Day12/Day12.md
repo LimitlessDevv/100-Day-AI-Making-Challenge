@@ -34,26 +34,26 @@ With MCP, however, once the MCP server is connected to the AI Agent, the agent c
 ## 🤖 AI Tools : [Azure AI Foundry](https://ai.azure.com)
 Azure AI Foundry is Microsoft's unified, enterprise grade platform for building, deploying, and managing generative AI applications and agents. You can build, customize, and securely manage powerful, task-automating AI agents using a wide variety of models.
 
-![alt text](image.png)
+![alt text](images/image.png)
 
 ## 📊 Results
 I created an AI Agent with the gpt-4o model in Azure AI Foundry.
 
 When I asked the question, “Until when can I use default outbound access in Azure?” without any additional configuration, it provided an incorrect answer based on data from October 2023.
-![alt text](<스크린샷 2025-10-24 141115.png>) 
+![alt text](<images/스크린샷 2025-10-24 141115.png>) 
 
 I connected the Microsoft Learn MCP Server, which allows AI agents to retrieve up-to-date information directly from Microsoft's official documentation
-![alt text](image-1.png)
+![alt text](images/image-1.png)
 by running [attach_learn_mcp_tool.py](source-code/Azure-AI-Agent-Remote-MCP-main/attach_learn_mcp_tool.py)
-![alt text](<스크린샷 2025-10-24 135952.png>)
+![alt text](<images/스크린샷 2025-10-24 135952.png>)
 
 Following integration, I checked the AI Foundry Playground and confirmed that the MCP was added to the 'Knowledge' section.
-![alt text](image-2.png)
+![alt text](images/image-2.png)
 
 So, I asked the chatbot again, "Until when can I use default outbound access in Azure?".
 
 And it successfully answered with the correct date: March 31, 2026.
-![alt text](<스크린샷 2025-10-24 141151.png>) 
+![alt text](<images/스크린샷 2025-10-24 141151.png>) 
 
 ## 📝 Reflection
 The way this AI agent references Microsoft Learn to answer questions is identical to my own workflow as an Azure Cloud Engineer.
