@@ -5,7 +5,7 @@
 ## 🎯 Objective
 While working as an Azure Cloud Engineer, I often use AI chatbots like ChatGPT and Gemini to ask about customer inquiries, deployment methods, and error resolutions related to resources. However, these AI chatbots often produce hallucinations or provide outdated information. Because of that, I thought it would be great to have a chatbot specializing in Azure that references official Azure Docs to provide reliable answers.
 
-Coincidentally, while watching YouTube, I came across a video titled [Connect Azure AI Agent to Microsoft Learn MCP Server | Step-by-Step Tutorial](https://www.youtube.com/watch?v=1zcpZTQicfk), which shows how to develop and AI Agent integrated with the  [MS Learn MCP Server](https://github.com/microsoftdocs/mcp/). So I decided to follow the tutorial and try developing an Azure AI Agent myself.
+Coincidentally, while watching YouTube, I came across a video titled [Connect Azure AI Agent to Microsoft Learn MCP Server | Step-by-Step Tutorial](https://www.youtube.com/watch?v=1zcpZTQicfk), which shows how to develop an AI Agent integrated with the  [MS Learn MCP Server](https://github.com/microsoftdocs/mcp/). So I decided to follow the tutorial and try developing an Azure AI Agent myself.
 
 To summarize about the AI Agent and MCP:
 <img src="images/image.png" alt="alt text" width="800" />
