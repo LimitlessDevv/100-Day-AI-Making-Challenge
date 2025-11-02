@@ -19,4 +19,4 @@ Each day, I created outputs such as apps, images, and videos using various AI to
 | Day 9 | Using Realtime streaming AI in Google AI Studio |Google AI Studio| [Day 9](Day1-9/Day9/Day9.md) |
 | Day10 | Building a Telephone English Review App with Google AI Studio |Google AI Studio| [Day 10](Day10-19/Day10/Day10.md) |
 | Day11 | Building and Deploy Application with GitHub Copilot |GitHub Copilot| [Day 11](Day10-19/Day11/Day11.md) |
-| Day12 | Building AI Agent Using Microsoft Learn MCP Server | [Day 12](Day10-19/Day12/Day12.md) |
+| Day12 | Building AI Agent Using Microsoft Learn MCP Server | Azure AI foundry | [Day 12](Day10-19/Day12/Day12.md) |
