@@ -77,9 +77,9 @@ Total: Just 2 FLAG actions (6 seconds) + 100% accuracy
 
 ### 🔵 Power Automate Cloud Flow
 
-![Power Automate Screenshot](images/power-automate-flow.png)
-
 - **Seamless Microsoft Integration**: Native connectors with Outlook, Excel, SharePoint, Teams - works perfectly with existing Microsoft 365 environment without extra setup or complex configurations
+
+    <img src="images/power-automate-flow.png" width="350" alt="Power Automate Screenshot">
 
 ### 🟠 Azure OpenAI
 
@@ -149,7 +149,7 @@ Total: Just 2 FLAG actions (6 seconds) + 100% accuracy
 
 ### ✅ Excel Results
 
-<img src="images/excel-results.png" width="600" alt="Actual SR Table Results in Excel">
+<img src="images/excel-results.png" width="1200" alt="Actual SR Table Results in Excel">
 
 **As you can see:**
 - ✅ **All columns auto-filled**: Request ID, Date, Status, Customer, Categories, Duration - everything populated automatically
