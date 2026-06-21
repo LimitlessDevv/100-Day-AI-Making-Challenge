@@ -1,6 +1,6 @@
 # AI Making Challenge - Day 13
 
-## 💡 Topic: From Manual SR Logging to Intelligent Automation with Power Automate
+## 💡 Topic: From Manual SR Logging to Intelligent Automation
 
 ## 🎯 Objective
 
