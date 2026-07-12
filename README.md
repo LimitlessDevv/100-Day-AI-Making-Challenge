@@ -8,6 +8,7 @@ Each day, I created outputs such as apps, images, and videos using various AI to
 
 | Day | Topic | AI Tools   | Link |
 | --- | --- | --- | --- |
+| Day14 | Azure Network Path Tracer - Network Visualization & Rule Validation | Claude Code | [Day 14](Day10-19/Day14/Day14.md) |
 | Day13 | From Manual SR Logging to Intelligent Automation | Power Automate, Azure OpenAI | [Day 13](Day10-19/Day13/Day13.md) |
 | Day12 | Building AI Agent Using Microsoft Learn MCP Server | Azure AI foundry | [Day 12](Day10-19/Day12/Day12.md) |
 | Day11 | Building and Deploy Application with GitHub Copilot |GitHub Copilot| [Day 11](Day10-19/Day11/Day11.md) |
