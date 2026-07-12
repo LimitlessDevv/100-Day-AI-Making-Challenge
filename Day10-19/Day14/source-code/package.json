@@ -1,0 +1,17 @@
+{
+  "name": "azure-network-path-tracer",
+  "version": "1.0.0",
+  "description": "Azure Network Path Tracing Visualization",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "body-parser": "^1.20.2",
+    "@azure/identity": "^3.4.0",
+    "@azure/arm-network": "^33.1.0"
+  }
+}
